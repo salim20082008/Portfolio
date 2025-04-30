@@ -1,0 +1,81 @@
+.Project{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.project_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+.project_card{
+    padding: 35px 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    opacity: 0.4;
+}
+.project_card:hover{
+    opacity: 1;
+}
+.project_card img{
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 5px;
+    background: #404040;
+    background: linear-gradient(128deg, rgba(64, 64, 64, 1) 25%, rgba(255, 255, 255, 1) 53%, rgb(119, 0, 255) 84%);
+    margin-bottom: 20px;
+}
+.project_card h1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    text-decoration: none;
+    background: linear-gradient(
+        90deg,
+        #2a2828,
+        #ffffff,
+        #6600ff
+      );
+      background-size: 300% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+      white-space: nowrap;  /* Prevents wrapping */
+      animation: moveGradient 6s linear infinite;
+}
+@media (max-width:1220px) {
+    .project_wrapper{
+        display: block;
+        margin: 0 auto;
+    }
+    .project_card{
+        width: 450px;
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 30px;
+    }
+    .project_card img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .project_card{
+        width: 70%;
+    }
+    .project_card h1{
+        width: 100%;
+        font-size: 23px;
+    }
+}
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: -300% 0%;
+      }
+  }

@@ -1,0 +1,31 @@
+.Footer_wrapper p{
+    width: 600px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+}
+.Footer_wrapper p span{
+    color: #6600ff;
+}
+hr{
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #404040;
+    background: linear-gradient(128deg, rgba(64, 64, 64, 1) 25%, rgba(255, 255, 255, 1) 53%, rgb(119, 0, 255) 84%);
+}
+
+@media (max-width: 630px){
+    .Footer_wrapper p{
+        max-width: 600px;
+        width: 100%;
+    }
+    .Footer_wrapper p span{
+        width: 100%;
+    }
+}
