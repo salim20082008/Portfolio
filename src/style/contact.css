@@ -20,6 +20,96 @@ hr{
     background: linear-gradient(128deg, rgba(64, 64, 64, 1) 25%, rgba(255, 255, 255, 1) 53%, rgb(119, 0, 255) 84%);
 }
 
+
+.contact_wrapper h1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(
+        90deg,
+        #2a2828,
+        #ffffff,
+        #6600ff
+      );
+      background-size: 300% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: block;
+      /* white-space: nowrap;  Prevents wrapping */
+      animation: moveGradient 6s linear infinite;
+}
+.contact_wrapper p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    opacity: 0.5;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+
+
+
+
+
+
+
+.contact_menu{
+    display: block;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 15px;
+}
+.logotip{
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: white;
+    text-decoration: none;
+
+    background: linear-gradient(
+        90deg,
+        #2a2828,
+        #ffffff,
+        #6600ff
+      );
+      background-size: 300% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: block;
+      animation: moveGradient 6s linear infinite;
+}
+
+
+@media (max-width: 666px) {
+    .contact_wrapper h1{
+        width: 100%;
+    }
+    .contact_wrapper p{
+        width: 100%;
+    }
+}
+
 @media (max-width: 630px){
     .Footer_wrapper p{
         max-width: 600px;
@@ -29,3 +119,11 @@ hr{
         width: 100%;
     }
 }
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: -300% 0%;
+      }
+  }

@@ -24,7 +24,6 @@
       -webkit-background-clip: text;
       color: transparent;
       display: block;
-      white-space: nowrap;  /* Prevents wrapping */
       animation: moveGradient 6s linear infinite;
 }
 .back_content p{
@@ -58,7 +57,6 @@
       -webkit-background-clip: text;
       color: transparent;
       display: block;
-      white-space: nowrap;  /* Prevents wrapping */
       animation: moveGradient 6s linear infinite;
 }
 @media (max-width:670px) {

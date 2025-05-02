@@ -32,7 +32,6 @@
       -webkit-background-clip: text;
       color: transparent;
       display: block;
-      white-space: nowrap;  /* Prevents wrapping */
       animation: moveGradient 6s linear infinite;
 }
 .hero_content p{
